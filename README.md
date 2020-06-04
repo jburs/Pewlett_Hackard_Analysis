@@ -7,15 +7,15 @@
 
   Using the ERD, a series of SQL queeries similar to the following were used to import the CSV data into SQL, and establish Keys and relationships. The full queerie is viewable in this repository as the schema. 
 
-CREATE TABLE employees (
-    emp_no INT NOT NULL,
-    birth_date DATE NOT NULL,
-    first_name VARCHAR NOT NULL,
-    late_name VARCHAR NOT NULL,
-    gender VARCHAR NOT NULL,
-    hire_date DATE NOT NULL,
-    PRIMARY KEY(emp_no)
-    );
+CREATE TABLE employees (<br/>
+    emp_no INT NOT NULL,<br/>
+    birth_date DATE NOT NULL,<br/>
+    first_name VARCHAR NOT NULL,<br/>
+    late_name VARCHAR NOT NULL,<br/>
+    gender VARCHAR NOT NULL,<br/>
+    hire_date DATE NOT NULL,<br/>
+    PRIMARY KEY(emp_no)<br/>
+    );<br/>
 
 ## Table 1: Number of Retiring Employees by Title
   The number of retiring employees by title was found by joining the employee number, first and last name, title, from date, and salary. These values were taken from the retirement_info, titles, and salaries data frames. Then joined together using the common key employee number. The retirement info data frame was generated from the employees data frame, where only employees that are elible to retire were selected. The number of retiring employees data frame was then partitioned, to remove duplicates created when eployees changed positions within the company, leaving only their current position. This final data frame is called 'retire_by_title'. It contains 41,380 employees that are retiring, meaning 41,380 employees will need to be hired to replace them. 
