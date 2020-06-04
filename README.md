@@ -1,5 +1,5 @@
 # Pewlett Hackard Analysis
-
+<pre>
 ## Converting data from CSV to SQL Database
   The initial data is spread across 6 CSV files. The following ERD was created to visaulize the conections, and data types within the CSV files.
 
@@ -106,3 +106,4 @@ SELECT emp_no,<br/>
     FROM mentor_eligible_rough<br/>
 ) tmp WHERE rn = 1<br/>
 ORDER BY emp_no;<br/>
+<pre>
