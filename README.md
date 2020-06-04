@@ -1,5 +1,5 @@
 # Pewlett Hackard Analysis
-<pre>
+
 ## Converting data from CSV to SQL Database
   The initial data is spread across 6 CSV files. The following ERD was created to visaulize the conections, and data types within the CSV files.
 
@@ -8,7 +8,7 @@
   Using the ERD, a series of SQL queeries similar to the following were used to import the CSV data into SQL, and establish Keys and relationships. The full queerie is viewable in this repository as the schema. 
 
 CREATE TABLE employees (<br/>
-    emp_no INT NOT NULL,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;emp_no INT NOT NULL,<br/>
     birth_date DATE NOT NULL,<br/>
     first_name VARCHAR NOT NULL,<br/>
     late_name VARCHAR NOT NULL,<br/>
@@ -106,4 +106,4 @@ SELECT emp_no,<br/>
     FROM mentor_eligible_rough<br/>
 ) tmp WHERE rn = 1<br/>
 ORDER BY emp_no;<br/>
-<pre>
+
