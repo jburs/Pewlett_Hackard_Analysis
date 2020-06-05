@@ -107,3 +107,5 @@ SELECT emp_no,<br/>
 ) tmp WHERE rn = 1<br/>
 ORDER BY emp_no;<br/>
 
+## Recomendation for Further Analysis
+To continue analysing the previous montorship data, we will expand the age range for the mentorship program to get a larger number of potential mentors. From here we will filter by length of time in current position, to ensure each mentor has enough experience to benifit the new hires. This will maintain or number of mentors, while increasing the quality of mentors. 
